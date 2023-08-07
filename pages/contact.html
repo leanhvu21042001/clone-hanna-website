@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <!-- Commons Styles -->
+    <link rel="stylesheet" href="./public/styles/root.css" />
+    <link rel="stylesheet" href="./public/styles/header.css" />
+    <link rel="stylesheet" href="./public/styles/footer.css" />
+    <!-- End Commons Styles -->
+
+    <!-- Page Styles -->
+    <link rel="stylesheet" href="./public/styles/pages/contact.css" />
+  </head>
+  <body class="root">
+    <div class="page-body">
+      <!-- page header -->
+      <header id="page__header">
+        <div class="header-wrapper">
+          <div class="header-logo">
+            <a href="/pages/home.html">
+              <img
+                class="logo-image"
+                src="./public/images/hanna-header-logo.png"
+                alt="header-logo"
+              />
+            </a>
+          </div>
+
+          <nav class="header-nav">
+            <div class="hamburger-icon">
+              <div class="line inactive top"></div>
+              <div class="line inactive center"></div>
+              <div class="line inactive bottom"></div>
+            </div>
+            <ul class="nav-list active">
+              <li class="list-item">
+                <a class="item-anchor" href="/pages/work.html">Work</a>
+              </li>
+              <li class="list-item">
+                <a class="item-anchor" href="/pages/articles.html">Articles</a>
+              </li>
+              <li class="list-item">
+                <a class="item-anchor" href="/pages/contact.html"
+                  ><button>Say Hello</button></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- end page header -->
+
+      <main id="page__main-contact">
+        <!-- hero page -->
+        <section class="hero-section">
+          <h1>Say Hello.</h1>
+          <p>Want to work together? Awesome! Send me a quick message.</p>
+        </section>
+        <!-- end hero page -->
+
+        <form id="contact-form" action="/" method="get">
+          <input type="text" placeholder="Full name" />
+          <input type="email" placeholder="Email Address" />
+          <textarea
+            name="message"
+            rows="10"
+            placeholder="Please enter your message."
+          ></textarea>
+
+          <button>Get in Touch</button>
+        </form>
+      </main>
+
+      <!-- footer -->
+      <footer id="page__footer">
+        <div class="footer-wrapper">
+          <div class="copyright">
+            <p>
+              ©2023 Hanna. All rights reserved. Created by
+              <a href="fb.com/nhatcungtom">Lê Anh Vũ</a>
+            </p>
+          </div>
+          <ul class="footer-links">
+            <li class="list-item">
+              <a class="item-anchor" href="/pages/home.html">Home</a>
+            </li>
+            <li class="list-item">
+              <a class="item-anchor" href="/pages/work.html">Work</a>
+            </li>
+            <li class="list-item">
+              <a class="item-anchor" href="/pages/articles.html">Articles</a>
+            </li>
+            <li class="list-item">
+              <a class="item-anchor" href="/pages/contact.html">Say Hello</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="./public/scripts/header-hamburger-icon.js"></script>
+  </body>
+</html>

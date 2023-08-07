@@ -1,0 +1,101 @@
+#page__main-project {
+  padding: 0 var(--container-padding-x) 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5.6rem;
+}
+#page__main-project .hero-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#page__main-project .hero-section .section-left {
+  flex: 8;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+#page__main-project .hero-section .section-left h1 {
+  font-size: 7.2rem;
+  font-weight: var(--font-weight-regular);
+}
+
+#page__main-project .hero-section .section-left p {
+  font-size: 2rem;
+  color: var(--gray-color);
+  font-weight: var(--font-weight-light);
+  width: 90%;
+}
+
+#page__main-project .hero-section .section-right {
+  flex: 2;
+}
+
+#page__main-project .hero-section .section-right .view-project {
+  border: none;
+  border-radius: 0.4rem;
+  padding: 1.6rem 3.2rem;
+
+  color: var(--white-color);
+  background-color: var(--purple-color);
+
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+
+  cursor: pointer;
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  border-radius: 0.6rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#page__main-project .hero-section .section-right .view-project:hover {
+  background-color: var(--purple-color-dark);
+}
+
+/* Responsive HERO SECTION */
+
+@media screen and (max-width: 1200px) {
+  #page__main-project .hero-section {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  #page__main-project .hero-section .section-left h1 {
+    font-size: clamp(1rem, 4.5rem, 7.2rem);
+  }
+
+  #page__main-project .hero-section .section-left p {
+    width: 100%;
+    font-size: clamp(1rem, 1.5rem, 2rem);
+  }
+}
+
+#page__main-project .project-image img {
+  border-radius: 2.4rem;
+  height: 87.7rem;
+  width: 100%;
+  aspect-ratio: 1.15/1;
+}
+
+#page__main-project section.articles article {
+  margin-top: 2.4rem;
+}
+
+#page__main-project section.articles article h2 {
+  font-size: 4.8rem;
+  font-weight: var(--font-weight-medium);
+  line-height: 125%;
+}
+
+#page__main-project section.articles article p {
+  font-size: 2rem;
+  font-weight: var(--font-weight-light);
+  line-height: 155%;
+  margin-top: 2rem;
+}
